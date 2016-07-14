@@ -24,6 +24,7 @@ public class CardViewer : MonoBehaviour {
         currentCard = CardList.Instance.GetCard(pos);
         currentCard.SetActive(true);
         currentCard.transform.parent = transform;
+        currentCard.transform.position = currentCard.transform.parent.position;
         currentCard.name = currentCard.name.Remove(currentCard.name.Length-7, 7);
     }
 }
