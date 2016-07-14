@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class Card : MonoBehaviour {
+
+    public Text cardNameText;
 
     private float[] attributes = new float[5];
 
@@ -19,6 +22,10 @@ public class Card : MonoBehaviour {
     
     public Card Max(Card a, Card b, CardAttributes att) {
         return a.GetAttribute(att) > b.GetAttribute(att) ? a : b;
+    }
+
+    void Start() {
+        cardNameText.text = name;
     }
 
     private bool IsAttributeValid(CardAttributes att) {
