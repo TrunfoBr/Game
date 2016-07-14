@@ -5,18 +5,18 @@ PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 8
   AndroidProfiler: 0
-  defaultScreenOrientation: 0
+  defaultScreenOrientation: 2
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: HackatonCotidiano
-  productName: TrunfoBr
+  companyName: DefaultCompany
+  productName: 2013_10 - Sample Assets
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_ShowUnitySplashScreen: 1
   m_VirtualRealitySplashScreen: {fileID: 0}
-  defaultScreenWidth: 540
-  defaultScreenHeight: 960
+  defaultScreenWidth: 1024
+  defaultScreenHeight: 768
   defaultScreenWidthWeb: 960
   defaultScreenHeightWeb: 600
   m_RenderingPath: 1
@@ -26,7 +26,7 @@ PlayerSettings:
   m_MobileMTRendering: 0
   m_Stereoscopic3D: 0
   iosShowActivityIndicatorOnLoading: -1
-  androidShowActivityIndicatorOnLoading: 0
+  androidShowActivityIndicatorOnLoading: -1
   iosAppInBackgroundBehavior: 0
   displayResolutionDialog: 1
   iosAllowHTTPDownload: 1
@@ -39,7 +39,7 @@ PlayerSettings:
   disableDepthAndStencilBuffers: 0
   defaultIsFullScreen: 1
   defaultIsNativeResolution: 1
-  runInBackground: 0
+  runInBackground: 1
   captureSingleScreen: 0
   Override IPod Music: 0
   Prepare IOS For Recording: 0
@@ -89,14 +89,14 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleIdentifier: com.HackatonCotidiano.TrunfoBr
-  bundleVersion: 0.1
+  bundleIdentifier: com.unity.sampleassets
+  bundleVersion: 1.0
   preloadedAssets: []
   metroEnableIndependentInputSource: 0
   metroEnableLowLatencyPresentationAPI: 0
   xboxOneDisableKinectGpuReservation: 0
   virtualRealitySupported: 0
-  productGUID: aa71e033c556f69408e9c0ca20bec031
+  productGUID: 0086036c33305704294abb2f69fd081d
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 9
   AndroidPreferredInstallLocation: 1
@@ -142,8 +142,8 @@ PlayerSettings:
   iOSLaunchScreenLandscape: {fileID: 0}
   iOSLaunchScreenBackgroundColor:
     serializedVersion: 2
-    rgba: 0
-  iOSLaunchScreenFillPct: 100
+    rgba: 4294967040
+  iOSLaunchScreenFillPct: 1
   iOSLaunchScreenSize: 100
   iOSLaunchScreenCustomXibPath: 
   iOSLaunchScreeniPadType: 0
@@ -160,7 +160,7 @@ PlayerSettings:
   androidSplashScreen: {fileID: 0}
   AndroidKeystoreName: 
   AndroidKeyaliasName: 
-  AndroidTVCompatibility: 0
+  AndroidTVCompatibility: 1
   AndroidIsGame: 1
   androidEnableBanner: 1
   m_AndroidBanners:
@@ -173,11 +173,23 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: b5cde291ea047d54b8c3d060c643c024, type: 3}
+      m_Icon: {fileID: 0}
       m_Width: 128
       m_Height: 128
-  m_BuildTargetBatching: []
-  m_BuildTargetGraphicsAPIs: []
+  m_BuildTargetBatching:
+  - m_BuildTarget: Web
+    m_StaticBatching: 1
+    m_DynamicBatching: 1
+  m_BuildTargetGraphicsAPIs:
+  - m_BuildTarget: AndroidPlayer
+    m_APIs: 08000000
+    m_Automatic: 0
+  - m_BuildTarget: WindowsStandaloneSupport
+    m_APIs: 0200000001000000
+    m_Automatic: 1
+  - m_BuildTarget: WindowsStandaloneSupport
+    m_APIs: 0200000001000000
+    m_Automatic: 0
   webPlayerTemplate: APPLICATION:Default
   m_TemplateCustomTags: {}
   wiiUTitleID: 0005000011000000
@@ -217,7 +229,7 @@ PlayerSettings:
   ps3ThumbnailPath: 
   ps3BackgroundPath: 
   ps3SoundPath: 
-  ps3NPAgeRating: 12
+  ps3NPAgeRating: -1
   ps3TrophyCommId: 
   ps3NpCommunicationPassphrase: 
   ps3TrophyPackagePath: 
@@ -299,7 +311,7 @@ PlayerSettings:
   psp2LiveAreaTrialPath: 
   psp2PatchChangeInfoPath: 
   psp2PatchOriginalPackage: 
-  psp2PackagePassword: F69AzBlax3CF3EDNhm3soLBPh71Yexui
+  psp2PackagePassword: 2nh1Eor4ovj51YmEilItxJdcQQtokAsb
   psp2KeystoneFile: 
   psp2MemoryExpansionMode: 0
   psp2DRMType: 0
@@ -330,15 +342,21 @@ PlayerSettings:
   psp2InfoBarColor: 0
   psmSplashimage: {fileID: 0}
   spritePackerPolicy: 
-  scriptingDefineSymbols: {}
-  metroPackageName: TrunfoBr
+  scriptingDefineSymbols:
+    1: CROSS_PLATFORM_INPUT
+    2: CROSS_PLATFORM_INPUT
+    4: CROSS_PLATFORM_INPUT;MOBILE_INPUT
+    7: CROSS_PLATFORM_INPUT;MOBILE_INPUT
+    15: CROSS_PLATFORM_INPUT;MOBILE_INPUT
+    16: CROSS_PLATFORM_INPUT;MOBILE_INPUT
+  metroPackageName: 2013_10 - Sample Assets
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: TrunfoBr
+  metroApplicationDescription: 2013_10 - Sample Assets
   wsaImages: {}
   metroTileShortName: 
   metroCommandLineArgsFile: 
@@ -348,10 +366,9 @@ PlayerSettings:
   metroWideTileShowName: 0
   metroDefaultTileSize: 1
   metroTileForegroundText: 1
-  metroTileBackgroundColor: {r: 0.13333334, g: 0.17254902, b: 0.21568628, a: 0}
-  metroSplashScreenBackgroundColor: {r: 0.13333334, g: 0.17254902, b: 0.21568628,
-    a: 1}
-  metroSplashScreenUseBackgroundColor: 1
+  metroTileBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
+  metroSplashScreenBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
+  metroSplashScreenUseBackgroundColor: 0
   platformCapabilities: {}
   metroFTAName: 
   metroFTAFileTypes: []
@@ -411,27 +428,61 @@ PlayerSettings:
   XboxOneDescription: 
   XboxOneIsContentPackage: 0
   XboxOneEnableGPUVariability: 0
-  XboxOneSockets: {}
+  XboxOneSockets:
+    Unity Internal - Mono async-IO:
+      m_Name: Unity Internal - Mono async-IO
+      m_Port: 0
+      m_Protocol: 0
+      m_Usages: 0000000001000000
+      m_TemplateName: 
+      m_SessionRequirment: 0
+      m_DeviceUsages: 
   XboxOneSplashScreen: {fileID: 0}
   XboxOneAllowedProductIds: []
   XboxOnePersistentLocalStorageSize: 0
   intPropertyNames:
   - Android::ScriptingBackend
+  - CloudNetworkingId::CloudNetworkingId
+  - Metro::ScriptingBackend
   - Standalone::ScriptingBackend
-  - WebPlayer::ScriptingBackend
+  - WP8::ScriptingBackend
+  - WebGL::ScriptingBackend
+  - WebGL::audioCompressionFormat
+  - WebGL::exceptionSupport
+  - WebGL::memorySize
   - iOS::Architecture
   - iOS::EnableIncrementalBuildSupportForIl2cpp
   - iOS::ScriptingBackend
   Android::ScriptingBackend: 0
+  CloudNetworkingId::CloudNetworkingId: 49052
+  Metro::ScriptingBackend: 2
   Standalone::ScriptingBackend: 0
-  WebPlayer::ScriptingBackend: 0
+  WP8::ScriptingBackend: 2
+  WebGL::ScriptingBackend: 1
+  WebGL::audioCompressionFormat: 4
+  WebGL::exceptionSupport: 0
+  WebGL::memorySize: 256
   iOS::Architecture: 2
-  iOS::EnableIncrementalBuildSupportForIl2cpp: 1
-  iOS::ScriptingBackend: 1
+  iOS::EnableIncrementalBuildSupportForIl2cpp: 0
+  iOS::ScriptingBackend: 0
   boolPropertyNames:
-  - XboxOne::enus
-  XboxOne::enus: 1
-  stringPropertyNames: []
+  - WebGL::analyzeBuildSize
+  - WebGL::dataCaching
+  - WebGL::useEmbeddedResources
+  WebGL::analyzeBuildSize: 0
+  WebGL::dataCaching: 0
+  WebGL::useEmbeddedResources: 0
+  stringPropertyNames:
+  - Build_ServiceEnabled::Build_ServiceEnabled
+  - UNet_ServiceEnabled::UNet_ServiceEnabled
+  - WebGL::emscriptenArgs
+  - WebGL::template
+  - additionalIl2CppArgs::additionalIl2CppArgs
+  Build_ServiceEnabled::Build_ServiceEnabled: True
+  UNet_ServiceEnabled::UNet_ServiceEnabled: True
+  WebGL::emscriptenArgs: 
+  WebGL::template: APPLICATION:Default
+  additionalIl2CppArgs::additionalIl2CppArgs: 
   cloudProjectId: 
   projectName: 
   organizationId: 

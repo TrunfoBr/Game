@@ -8,23 +8,41 @@ Direct3D:
 Begin MonoManager ReloadAssembly
 Platform assembly: C:\Users\Icaro\Documents\TrunfoBr\networkTest_Data\Managed\UnityEngine.dll (this message is harmless)
 Loading C:\Users\Icaro\Documents\TrunfoBr\networkTest_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Icaro\Documents\TrunfoBr\networkTest_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Icaro\Documents\TrunfoBr\networkTest_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
 Platform assembly: C:\Users\Icaro\Documents\TrunfoBr\networkTest_Data\Managed\Assembly-CSharp.dll (this message is harmless)
 Loading C:\Users\Icaro\Documents\TrunfoBr\networkTest_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
 Platform assembly: C:\Users\Icaro\Documents\TrunfoBr\networkTest_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading C:\Users\Icaro\Documents\TrunfoBr\networkTest_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\Icaro\Documents\TrunfoBr\networkTest_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading C:\Users\Icaro\Documents\TrunfoBr\networkTest_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.108 seconds
+- Completed reload, in  0.076 seconds
 Platform assembly: C:\Users\Icaro\Documents\TrunfoBr\networkTest_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Icaro\Documents\TrunfoBr\networkTest_Data\Managed\System.dll (this message is harmless)
 desktop: 1280x720 60Hz; virtual: 1280x720 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 0.793570 ms
-Log: connection {1} has been disconnected by timeout; address {::ffff:127.0.0.1:55414}
-Log: connection {1} has been disconnected by timeout; address {::ffff:127.0.0.1:61292}
-Log: connection {1} has been disconnected by timeout; address {::ffff:127.0.0.1:61293}
-Log: connection {1} has been disconnected by timeout; address {::ffff:127.0.0.1:65176}
+UnloadTime: 0.647079 ms
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 2f4 -> priority: 1 
+  Thread -> id: 72fc -> priority: 1 
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 356)
+
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 356)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.346410 ms
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1102.
+Total: 2.365315 ms (FindLiveObjects: 0.090507 ms CreateObjectMapping: 0.044787 ms MarkObjects: 2.199697 ms  DeleteObjects: 0.029858 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.896207 ms
+
+Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 918.
+Total: 2.849575 ms (FindLiveObjects: 0.086774 ms CreateObjectMapping: 0.041987 ms MarkObjects: 2.682557 ms  DeleteObjects: 0.037789 ms)
+
