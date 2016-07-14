@@ -29,6 +29,9 @@ public class CardFactory : MonoBehaviour {
     private void GenerateCard(string cardName) {
         var newCard = Instantiate(cardTemplate);
         newCard.name = cardName;
+        var cardScript = newCard.GetComponent<Card>();
+        for (int i = 0; i < 5; ++i)
+            cardScript.SetAttribute((CardAttributes)i, Random.Range(1, 11));
         CardList.Instance.AddCard(newCard);
     }
 }

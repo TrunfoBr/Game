@@ -4,6 +4,7 @@ using UnityEngine.UI;
 public class Card : MonoBehaviour {
 
     public Text cardNameText;
+    public Text[] attributeText;
 
     private float[] attributes = new float[5];
 
@@ -15,9 +16,12 @@ public class Card : MonoBehaviour {
     }
 
     public void SetAttribute(CardAttributes att, float value) {
-        if (IsAttributeValid(att))
+        if (IsAttributeValid(att)) {
             attributes[(int)att] = value;
-        Logger.LogError(this, "GetAttribute", "Invalid attribute: " + (int)att);
+            attributeText[(int)att].text = value.ToString() + "  ";
+        }
+        else
+            Logger.LogError(this, "GetAttribute", "Invalid attribute: " + (int)att);
     }
     
     public Card Max(Card a, Card b, CardAttributes att) {
