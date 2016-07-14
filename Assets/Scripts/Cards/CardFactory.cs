@@ -23,7 +23,7 @@ public class CardFactory : MonoBehaviour {
 
     private void GenerateCards() {
         for (int i = 0; i < 10; ++i)
-            GenerateCard("Politico #" + i.ToString());
+            GenerateCard("Fulano de tal #" + i.ToString() + " - C++");
     }
 
     private void GenerateCard(string cardName) {
