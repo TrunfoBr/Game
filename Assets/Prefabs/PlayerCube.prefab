@@ -14,6 +14,8 @@ GameObject:
   - 114: {fileID: 11414266}
   - 114: {fileID: 11472434}
   - 114: {fileID: 11432956}
+  - 114: {fileID: 11416598}
+  - 114: {fileID: 11410238}
   m_Layer: 0
   m_Name: PlayerCube
   m_TagString: Untagged
@@ -78,6 +80,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &11410238
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98a200297cd2ad74bac701e897f8cfc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11414266
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -110,6 +123,18 @@ MonoBehaviour:
     i15: 39
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 1
+--- !u!114 &11416598
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7241d374ad16faf4288fef1feefa558e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
 --- !u!114 &11432956
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -141,13 +166,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0eeb6525ba14c94bafed247cd67e86e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 186080, guid: c9bf8e70c76e36a4597a91e5c98a8192, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 186080, guid: c9bf8e70c76e36a4597a91e5c98a8192, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 147576}

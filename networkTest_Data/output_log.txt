@@ -14,17 +14,13 @@ Platform assembly: C:\Users\Icaro\Documents\TrunfoBr\networkTest_Data\Managed\Un
 Loading C:\Users\Icaro\Documents\TrunfoBr\networkTest_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\Icaro\Documents\TrunfoBr\networkTest_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading C:\Users\Icaro\Documents\TrunfoBr\networkTest_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: C:\Users\Icaro\Documents\TrunfoBr\networkTest_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading C:\Users\Icaro\Documents\TrunfoBr\networkTest_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: C:\Users\Icaro\Documents\TrunfoBr\networkTest_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\Icaro\Documents\TrunfoBr\networkTest_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.153 seconds
+- Completed reload, in  0.086 seconds
 Platform assembly: C:\Users\Icaro\Documents\TrunfoBr\networkTest_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Icaro\Documents\TrunfoBr\networkTest_Data\Managed\System.dll (this message is harmless)
 desktop: 1280x720 60Hz; virtual: 1280x720 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 0.706795 ms
+UnloadTime: 0.599493 ms
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 4974 -> priority: 1 
+  Thread -> id: 4810 -> priority: 1 
