@@ -243,11 +243,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 517012132}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65fe7c3d81f7c444d9eb527ad52ca79a, type: 3}
+  m_Script: {fileID: 11500000, guid: de3bac813c76c0747a3628f9f5879565, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cardFactory: {fileID: 1512982114}
-  sceneToLoadOnEnd: singlePlayer
+  sceneToLoadOnEnd: mainMenu
   text: {fileID: 1538114549}
 --- !u!4 &517012134
 Transform:
