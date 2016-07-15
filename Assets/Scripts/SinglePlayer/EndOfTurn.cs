@@ -1,16 +1,26 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
+using System.Collections;
 
 public class EndOfTurn : MonoBehaviour {
 
     public SinglePlayer[] players;
+    public float endTime = 4f;
+
+    public GameObject infoCanvas;
+    public Text attText;
+    public Text winnerText;
 
     public static EndOfTurn Instance { get; private set; }
     public int LastWinner { get; private set; }
 
+    private string attributestr;
+
     public void RequestAttributeComparison(int attribute) {
+        attributestr = ((CardAttributes)attribute).ToString();
         FindWinner(attribute);
         UpdateWinner();
-        EndTurn();
+        StartCoroutine("EndTurn");
         Logger.Log(this, "RequestAttributeComparison", "The winner is: " + LastWinner);
     }
 
@@ -55,7 +65,17 @@ public class EndOfTurn : MonoBehaviour {
         }
     }
 
-    private void EndTurn() {
+    private IEnumerator EndTurn() {
+        infoCanvas.SetActive(true);
+        attText.text = "Atributo: " + attributestr;
+        winnerText.text = "Vencedor: " + (LastWinner == 0 ? "Você" : "Computador");
+
+        Timer timer = new Timer(endTime);
+        while (!timer.IsOver()) {
+            timer.Run();
+            yield return null;
+        }
+        infoCanvas.SetActive(false);
         TurnManager.Instance.EndMyTurn();
     }
 }

@@ -28,15 +28,15 @@ public class Card : MonoBehaviour {
     static public Card Max(Card a, Card b, CardAttributes att) {
         Debug.Log("[Card]Max:Comparing attributes " + a.GetAttribute(att) + " with " + b.GetAttribute(att));
         switch (att) {
-            case (CardAttributes.At1):
+            case (CardAttributes.AssiduidadePercentual):
                 return a.GetAttribute(att) > b.GetAttribute(att) ? a : b;
-            case (CardAttributes.At2):
+            case (CardAttributes.AssiduidadeMedia):
                 return a.GetAttribute(att) > b.GetAttribute(att) ? a : b;
-            case (CardAttributes.At3):
+            case (CardAttributes.EvolucaoPatrimonial):
                 return a.GetAttribute(att) > b.GetAttribute(att) ? a : b;
-            case (CardAttributes.At4):
+            case (CardAttributes.Emendas):
                 return a.GetAttribute(att) > b.GetAttribute(att) ? a : b;
-            case (CardAttributes.At5):
+            case (CardAttributes.MediaDeEmendas):
                 return a.GetAttribute(att) > b.GetAttribute(att) ? a : b;
             default:
                 return a;
