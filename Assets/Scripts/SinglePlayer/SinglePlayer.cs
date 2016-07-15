@@ -8,6 +8,9 @@ public class SinglePlayer : MonoBehaviour {
     public GameObject hand;
     public List<GameObject> my_deck = new List<GameObject>();
 
+    protected bool hasDecidedAttribute = false;
+    protected int attributeToPlay;
+    
     public virtual void AddCard(GameObject card) {
         my_deck.Add(card);
         card.transform.parent = transform;
@@ -20,8 +23,17 @@ public class SinglePlayer : MonoBehaviour {
             hand = my_deck[0];
             hand.SetActive(true);
         }
-        if (turn) {
 
+        if (turn) {
+            PlayerUpdate();
+            if (hasDecidedAttribute) {
+                Logger.Log(this, "Update", "attribute to play was decided: " + attributeToPlay);
+                // TODO: Do end of turn calculations
+                hasDecidedAttribute = false;
+                TurnManager.Instance.EndMyTurn();
+            }
         }
     }
+
+    protected virtual void PlayerUpdate() {}
 }
