@@ -36,7 +36,6 @@ public class EndGame : MonoBehaviour {
     }
 
     public void FinishGame() {
-        Debug.LogError("We have a victor");
         SceneManager.LoadScene("mainMenu");
     }
 }
