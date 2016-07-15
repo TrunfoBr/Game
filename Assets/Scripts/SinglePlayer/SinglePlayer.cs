@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -7,6 +8,7 @@ public class SinglePlayer : MonoBehaviour {
     public bool turn = false;
     public GameObject hand;
     public List<GameObject> my_deck = new List<GameObject>();
+    public Text cardAmount;
 
     protected bool hasDecidedAttribute = false;
     protected int attributeToPlay;
@@ -19,6 +21,7 @@ public class SinglePlayer : MonoBehaviour {
     }
 
     void Update() {
+        cardAmount.text = my_deck.Count.ToString() + " Cards";
         if (my_deck.Count == 0) {
             EndGame.Instance.NotifyDeath();
             return;
