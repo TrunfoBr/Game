@@ -549,6 +549,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34fd2debeead35b43972fa0fdce4df7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  turn: 0
   hand: {fileID: 0}
   my_deck: []
 --- !u!1 &660425564
@@ -578,6 +579,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9198a7aa7fb82e04594686f947974bb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  turn: 0
   hand: {fileID: 0}
   my_deck: []
 --- !u!4 &660425566
@@ -734,6 +736,56 @@ Canvas:
   m_SortingLayerID: 771169021
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1001 &950952802
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 401064, guid: 7a8e78a317e5a4349a8095aef143fdf5, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 401064, guid: 7a8e78a317e5a4349a8095aef143fdf5, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 401064, guid: 7a8e78a317e5a4349a8095aef143fdf5, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 401064, guid: 7a8e78a317e5a4349a8095aef143fdf5, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 401064, guid: 7a8e78a317e5a4349a8095aef143fdf5, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 401064, guid: 7a8e78a317e5a4349a8095aef143fdf5, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 401064, guid: 7a8e78a317e5a4349a8095aef143fdf5, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 401064, guid: 7a8e78a317e5a4349a8095aef143fdf5, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11413046, guid: 7a8e78a317e5a4349a8095aef143fdf5, type: 2}
+      propertyPath: players.Array.data[0]
+      value: 
+      objectReference: {fileID: 660425564}
+    - target: {fileID: 11413046, guid: 7a8e78a317e5a4349a8095aef143fdf5, type: 2}
+      propertyPath: players.Array.data[1]
+      value: 
+      objectReference: {fileID: 638768709}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 7a8e78a317e5a4349a8095aef143fdf5, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1076302781
 GameObject:
   m_ObjectHideFlags: 0
