@@ -474,16 +474,20 @@ PlayerSettings:
   WebGL::useEmbeddedResources: 0
   stringPropertyNames:
   - Build_ServiceEnabled::Build_ServiceEnabled
+  - ErrorHub_ServiceEnabled::ErrorHub_ServiceEnabled
+  - Hub_ServiceEnabled::Hub_ServiceEnabled
   - UNet_ServiceEnabled::UNet_ServiceEnabled
   - WebGL::emscriptenArgs
   - WebGL::template
   - additionalIl2CppArgs::additionalIl2CppArgs
-  Build_ServiceEnabled::Build_ServiceEnabled: True
-  UNet_ServiceEnabled::UNet_ServiceEnabled: True
+  Build_ServiceEnabled::Build_ServiceEnabled: False
+  ErrorHub_ServiceEnabled::ErrorHub_ServiceEnabled: False
+  Hub_ServiceEnabled::Hub_ServiceEnabled: False
+  UNet_ServiceEnabled::UNet_ServiceEnabled: False
   WebGL::emscriptenArgs: 
   WebGL::template: APPLICATION:Default
   additionalIl2CppArgs::additionalIl2CppArgs: 
-  cloudProjectId: 
-  projectName: 
-  organizationId: 
+  cloudProjectId: 0e6b6c28-9bb1-4c5e-96d4-ce3891dde867
+  projectName: TrunfoBr
+  organizationId: icaro-da-costa-mota
   cloudEnabled: 0
