@@ -18,9 +18,7 @@ public class TurnManager : MonoBehaviour {
         if (endOfTurn) {
             players[turn].GetComponent<SinglePlayer>().turn = false;
             endOfTurn = false;
-            turn ++;
-            if (turn == players.Count)
-                turn = 0;
+            turn = EndOfTurn.Instance.LastWinner;
             players[turn].GetComponent<SinglePlayer>().turn = true;
         }
     }
