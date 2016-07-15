@@ -247,7 +247,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardFactory: {fileID: 1512982114}
-  sceneToLoadOnEnd: mainMenu
+  sceneToLoadOnEnd: singlePlayer
   text: {fileID: 1538114549}
 --- !u!4 &517012134
 Transform:
