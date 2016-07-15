@@ -16,21 +16,29 @@ Platform assembly: C:\Users\Icaro\Documents\TrunfoBr\networkTest_Data\Managed\Un
 Loading C:\Users\Icaro\Documents\TrunfoBr\networkTest_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\Icaro\Documents\TrunfoBr\networkTest_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading C:\Users\Icaro\Documents\TrunfoBr\networkTest_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.070 seconds
+- Completed reload, in  0.055 seconds
 Platform assembly: C:\Users\Icaro\Documents\TrunfoBr\networkTest_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Icaro\Documents\TrunfoBr\networkTest_Data\Managed\System.dll (this message is harmless)
 desktop: 1280x720 60Hz; virtual: 1280x720 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 0.657809 ms
+UnloadTime: 0.604157 ms
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 180c -> priority: 1 
-MatchMakingClient Create :https://mm.unet.unity3d.com/json/reply/CreateMatchRequest
+  Thread -> id: a74 -> priority: 1 
+MatchMakingClient ListMatches :https://mm.unet.unity3d.com/json/reply/ListMatchRequest
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-JSON Response: [[UnityEngine.Networking.Match.CreateMatchResponse]-success:True-extendedInfo:]-address:52.71.166.171,port:9999,networkId:0x001000000019F2F3,nodeId:0xC905,usingRelay:True
+JSON Response: [[UnityEngine.Networking.Match.ListMatchResponse]-success:True-extendedInfo:]-matches.Count:1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+MatchMakingClient Join :https://mm.unet.unity3d.com/json/reply/JoinMatchRequest
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+JSON Response: [[UnityEngine.Networking.Match.JoinMatchResponse]-success:True-extendedInfo:]-address:52.86.7.189,port:9999,networkId:0x00100000001A71C9,nodeId:0xCD0C,usingRelay:True
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
@@ -43,8 +51,8 @@ DontDestroyOnLoad only work for root GameObjects or components on root GameObjec
 (Filename:  Line: 356)
 
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.582698 ms
+UnloadTime: 1.274096 ms
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1838.
-Total: 5.594648 ms (FindLiveObjects: 0.177282 ms CreateObjectMapping: 0.125030 ms MarkObjects: 5.241950 ms  DeleteObjects: 0.048985 ms)
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1774.
+Total: 7.583928 ms (FindLiveObjects: 0.404015 ms CreateObjectMapping: 0.135294 ms MarkObjects: 6.985369 ms  DeleteObjects: 0.056450 ms)
 
