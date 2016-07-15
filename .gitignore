@@ -44,3 +44,7 @@ Thumbs.db.meta
 Docs/
 Assets/Editor/Doxygen/
 Assets/Editor/Doxygen.meta
+
+Assets/Sprites/Assets/
+Assets/Sprites/Assets.meta
+Assets/Sprites/Assets.zip*

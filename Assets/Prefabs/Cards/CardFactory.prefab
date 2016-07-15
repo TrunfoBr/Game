@@ -23,7 +23,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 179240}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -39,6 +39,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 652460e3ed29c814d8918303023e0d50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dbUrl: https://8ddbdd99-b1ed-4834-98f5-254e9cb261df-bluemix.cloudant.com/politicos/f25a916a5a971d22928ebefba91bc5d5
   cardTemplate: {fileID: 130712, guid: 93f8bffc59d6bc44d9f84678641386e1, type: 2}
   cardList: {fileID: 119888, guid: d5385e9f12533484bb130bfbee68dd95, type: 2}
 --- !u!1001 &100100000
@@ -52,6 +53,14 @@ Prefab:
       propertyPath: cardList
       value: 
       objectReference: {fileID: 119888, guid: d5385e9f12533484bb130bfbee68dd95, type: 2}
+    - target: {fileID: 0}
+      propertyPath: dbUrl
+      value: https://8ddbdd99-b1ed-4834-98f5-254e9cb261df-bluemix.cloudant.com/politicos/f25a916a5a971d22928ebefba91bc5d5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 179240}
