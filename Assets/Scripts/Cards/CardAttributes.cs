@@ -1,3 +1,3 @@
 ﻿public enum CardAttributes {
-    AssiduidadePercentual, AssiduidadeMedia, EvolucaoPatrimonial, Emendas, MediaDeEmendas
+    PercentualDeFaltas, MediaDeFaltas, EvolucaoPatrimonial, EmendasAprovadas, MediaDeEmendas
 }

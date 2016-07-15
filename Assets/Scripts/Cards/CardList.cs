@@ -19,10 +19,7 @@ public class CardList : MonoBehaviour {
     }
 
     public GameObject GetCard(int pos) {
-        var card = Instantiate(cards[pos]);
-        card.name = card.name.Remove(card.name.Length - 7, 7);
-        Debug.Log(card.name);
-        return card;
+        return Instantiate(cards[pos]);
     }
 
     void Awake() {

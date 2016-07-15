@@ -18,7 +18,9 @@ public class Dealer : MonoBehaviour {
 
         for (int i=0; i<deck.CardAmount; i += players.Count) {
             for (int j=0; j<players.Count; j++) {
-                players[j].AddCard(deck.GetCard(index[i+j]));
+                var card = deck.GetCard(index[i + j]);
+                card.name = card.name.Remove(card.name.Length - 7, 7);
+                players[j].AddCard(card);
             }
         }
 	}

@@ -130,7 +130,7 @@ Prefab:
       objectReference: {fileID: 1763807402}
     - target: {fileID: 11432644, guid: 93f8bffc59d6bc44d9f84678641386e1, type: 2}
       propertyPath: m_Text
-      value: "  Assiduidade m\xE9dia"
+      value: '  Media de Faltas'
       objectReference: {fileID: 0}
     - target: {fileID: 11432644, guid: 93f8bffc59d6bc44d9f84678641386e1, type: 2}
       propertyPath: m_FontData.m_FontSize
@@ -207,6 +207,10 @@ Prefab:
     - target: {fileID: 11404390, guid: 93f8bffc59d6bc44d9f84678641386e1, type: 2}
       propertyPath: m_Text
       value: "  M\xE9dia Emendas"
+      objectReference: {fileID: 0}
+    - target: {fileID: 11476066, guid: 93f8bffc59d6bc44d9f84678641386e1, type: 2}
+      propertyPath: m_Text
+      value: '  % de Faltas'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 93f8bffc59d6bc44d9f84678641386e1, type: 2}

@@ -712,7 +712,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 0
-  m_Text: "  Assiduidade m\xE9dia"
+  m_Text: '  Media de Faltas'
 --- !u!114 &11436008
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -758,6 +758,12 @@ MonoBehaviour:
   - {fileID: 11425198}
   - {fileID: 11489422}
   - {fileID: 11418070}
+  attributes:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
 --- !u!114 &11452034
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -892,7 +898,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 0
-  m_Text: '  Assiduidade %'
+  m_Text: '  % de Faltas'
 --- !u!114 &11478560
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -25,16 +25,16 @@ public class Card : MonoBehaviour {
             Logger.LogError(this, "GetAttribute", "Invalid attribute: " + (int)att);
     }
     
-    static public Card Max(Card a, Card b, CardAttributes att) {
+    static public Card Wins(Card a, Card b, CardAttributes att) {
         Debug.Log("[Card]Max:Comparing attributes " + a.GetAttribute(att) + " with " + b.GetAttribute(att));
         switch (att) {
-            case (CardAttributes.AssiduidadePercentual):
-                return a.GetAttribute(att) > b.GetAttribute(att) ? a : b;
-            case (CardAttributes.AssiduidadeMedia):
-                return a.GetAttribute(att) > b.GetAttribute(att) ? a : b;
+            case (CardAttributes.PercentualDeFaltas):
+                return a.GetAttribute(att) < b.GetAttribute(att) ? a : b;
+            case (CardAttributes.MediaDeFaltas):
+                return a.GetAttribute(att) < b.GetAttribute(att) ? a : b;
             case (CardAttributes.EvolucaoPatrimonial):
-                return a.GetAttribute(att) > b.GetAttribute(att) ? a : b;
-            case (CardAttributes.Emendas):
+                return a.GetAttribute(att) < b.GetAttribute(att) ? a : b;
+            case (CardAttributes.EmendasAprovadas):
                 return a.GetAttribute(att) > b.GetAttribute(att) ? a : b;
             case (CardAttributes.MediaDeEmendas):
                 return a.GetAttribute(att) > b.GetAttribute(att) ? a : b;

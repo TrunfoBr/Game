@@ -36,7 +36,7 @@ public class EndOfTurn : MonoBehaviour {
         Card winnerCard = players[LastWinner].GetComponent<SinglePlayer>().hand.GetComponent<Card>();
         for (int i = 1; i < players.GetLength(0); ++i) {
             Card currentCard = players[i].GetComponent<SinglePlayer>().hand.GetComponent<Card>();
-            if (Card.Max(winnerCard, currentCard, (CardAttributes)attribute) == currentCard) {
+            if (Card.Wins(winnerCard, currentCard, (CardAttributes)attribute) == currentCard) {
                 LastWinner = i;
                 winnerCard = currentCard;
             }
