@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class EndGame : MonoBehaviour {
 
@@ -36,5 +37,6 @@ public class EndGame : MonoBehaviour {
 
     public void FinishGame() {
         Debug.LogError("We have a victor");
+        SceneManager.LoadScene("mainMenu");
     }
 }

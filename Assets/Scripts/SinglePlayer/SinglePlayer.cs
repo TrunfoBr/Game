@@ -19,6 +19,11 @@ public class SinglePlayer : MonoBehaviour {
     }
 
     void Update() {
+        if (my_deck.Count == 0) {
+            EndGame.Instance.NotifyDeath();
+            return;
+        }
+
         if (hand != my_deck[0]) {
             hand = my_deck[0];
             hand.SetActive(true);
