@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/SampleScenes/Scenes/NetworkLobby.unity
   - enabled: 0
     path: Assets/SampleScenes/Scenes/NetworkSpaceship.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/mainMenu.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/cardViewerMenu.unity

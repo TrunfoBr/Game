@@ -16,35 +16,67 @@ Platform assembly: C:\Users\Icaro\Documents\TrunfoBr\networkTest2_Data\Managed\U
 Loading C:\Users\Icaro\Documents\TrunfoBr\networkTest2_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\Icaro\Documents\TrunfoBr\networkTest2_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading C:\Users\Icaro\Documents\TrunfoBr\networkTest2_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.064 seconds
+- Completed reload, in  0.496 seconds
 Platform assembly: C:\Users\Icaro\Documents\TrunfoBr\networkTest2_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Icaro\Documents\TrunfoBr\networkTest2_Data\Managed\System.dll (this message is harmless)
 desktop: 1280x720 60Hz; virtual: 1280x720 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 2.399369 ms
-Setting up 1 worker threads for Enlighten.
-  Thread -> id: fc4 -> priority: 1 
-MatchMakingClient Create :https://mm.unet.unity3d.com/json/reply/CreateMatchRequest
+UnloadTime: 0.815496 ms
+WWW OK!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
-
-JSON Response: [[UnityEngine.Networking.Match.CreateMatchResponse]-success:True-extendedInfo:]-address:52.86.7.189,port:9999,networkId:0x00100000001A71C9,nodeId:0xCDD4,usingRelay:True
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
-
-DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
- 
-(Filename:  Line: 356)
-
-DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
- 
-(Filename:  Line: 356)
 
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.695131 ms
+UnloadTime: 4.571071 ms
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1838.
-Total: 3.962714 ms (FindLiveObjects: 0.192677 ms CreateObjectMapping: 0.128762 ms MarkObjects: 3.589489 ms  DeleteObjects: 0.049918 ms)
+Unloading 93 unused Assets to reduce memory usage. Loaded Objects now: 3396.
+Total: 3.638942 ms (FindLiveObjects: 0.213204 ms CreateObjectMapping: 0.110101 ms MarkObjects: 3.267117 ms  DeleteObjects: 0.047586 ms)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 1bf4 -> priority: 1 
+MatchMakingClient ListMatches :https://mm.unet.unity3d.com/json/reply/ListMatchRequest
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+JSON Response: [[UnityEngine.Networking.Match.ListMatchResponse]-success:True-extendedInfo:]-matches.Count:1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+MatchMakingClient Join :https://mm.unet.unity3d.com/json/reply/JoinMatchRequest
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+JSON Response: [[UnityEngine.Networking.Match.JoinMatchResponse]-success:True-extendedInfo:]-address:52.86.130.215,port:9999,networkId:0x00100000001A7DB3,nodeId:0xC10A,usingRelay:True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 356)
+
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 356)
+
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.152798 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3604.
+Total: 8.123238 ms (FindLiveObjects: 1.241439 ms CreateObjectMapping: 0.496389 ms MarkObjects: 6.342489 ms  DeleteObjects: 0.040121 ms)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:SetActive (bool)
+  at UnityStandardAssets.Network.LobbyManager.OnPlayersNumberModified (Int32 count) [0x00000] in <filename unknown>:0 
+  at UnityStandardAssets.Network.LobbyPlayer.OnDestroy () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:SetActive (bool)
+  at UnityStandardAssets.Network.LobbyManager.OnPlayersNumberModified (Int32 count) [0x00000] in <filename unknown>:0 
+  at UnityStandardAssets.Network.LobbyPlayer.OnDestroy () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
 

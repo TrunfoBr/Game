@@ -5,6 +5,8 @@ using System.Collections.Generic;
 
 public class MainDeck : NetworkBehaviour {
 
+    public static MainDeck Instance;
+
     public override void OnStartServer() {
         var cards = CardList.Instance;
         for (int i = 0; i < cards.CardAmount; i++) {
@@ -14,4 +16,14 @@ public class MainDeck : NetworkBehaviour {
         }
     }
 
+    public void GiveCardTo(GameObject player) {
+
+    }
+
+    void Awake() {
+        if (Instance == null)
+            Instance = this;
+        else
+            Logger.LogError(this, "Awake", "Instance already exists");
+    }
 }
