@@ -6,6 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/CardListLoadScreen.unity
+  - enabled: 1
     path: Assets/Scenes/Lobby.unity
   - enabled: 1
     path: Assets/Scenes/game.unity
