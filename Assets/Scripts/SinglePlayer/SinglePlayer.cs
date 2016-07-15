@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 public class SinglePlayer : MonoBehaviour {
 
+    public bool turn = false;
     public GameObject hand;
     public List<GameObject> my_deck = new List<GameObject>();
 
@@ -18,6 +19,9 @@ public class SinglePlayer : MonoBehaviour {
         if (hand != my_deck[0]) {
             hand = my_deck[0];
             hand.SetActive(true);
+        }
+        if (turn) {
+
         }
     }
 }
