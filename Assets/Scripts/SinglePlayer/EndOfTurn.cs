@@ -10,6 +10,7 @@ public class EndOfTurn : MonoBehaviour {
     public GameObject infoCanvas;
     public Text attText;
     public Text winnerText;
+    public GameObject opponentCanvas;
 
     public static EndOfTurn Instance { get; private set; }
     public int LastWinner { get; private set; }
@@ -19,7 +20,6 @@ public class EndOfTurn : MonoBehaviour {
     public void RequestAttributeComparison(int attribute) {
         attributestr = ((CardAttributes)attribute).ToString();
         FindWinner(attribute);
-        UpdateWinner();
         StartCoroutine("EndTurn");
         Logger.Log(this, "RequestAttributeComparison", "The winner is: " + LastWinner);
     }
@@ -67,6 +67,7 @@ public class EndOfTurn : MonoBehaviour {
 
     private IEnumerator EndTurn() {
         infoCanvas.SetActive(true);
+        opponentCanvas.SetActive(false);
         attText.text = "Atributo: " + attributestr;
         winnerText.text = "Vencedor: " + (LastWinner == 0 ? "Você" : "Computador");
 
@@ -76,6 +77,8 @@ public class EndOfTurn : MonoBehaviour {
             yield return null;
         }
         infoCanvas.SetActive(false);
+        opponentCanvas.SetActive(true);
+        UpdateWinner();
         TurnManager.Instance.EndMyTurn();
     }
 }
