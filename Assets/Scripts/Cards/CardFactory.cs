@@ -24,7 +24,7 @@ public class CardFactory : MonoBehaviour {
 
     IEnumerator WaitForRequest(WWW www) {
         while (!www.isDone) {
-            progress = www.progress;
+            progress = www.progress * 100f;
             yield return null;
         }
 
