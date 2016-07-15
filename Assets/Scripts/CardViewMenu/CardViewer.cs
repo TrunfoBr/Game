@@ -25,6 +25,7 @@ public class CardViewer : MonoBehaviour {
         currentCard.SetActive(true);
         currentCard.transform.parent = transform;
         currentCard.transform.position = currentCard.transform.parent.position;
+        currentCard.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
         currentCard.name = currentCard.name.Remove(currentCard.name.Length-7, 7);
     }
 }
