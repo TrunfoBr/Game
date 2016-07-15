@@ -28,9 +28,8 @@ public class SinglePlayer : MonoBehaviour {
             PlayerUpdate();
             if (hasDecidedAttribute) {
                 Logger.Log(this, "Update", "attribute to play was decided: " + attributeToPlay);
-                // TODO: Do end of turn calculations
+                EndOfTurn.Instance.RequestAttributeComparison(attributeToPlay);
                 hasDecidedAttribute = false;
-                TurnManager.Instance.EndMyTurn();
             }
         }
     }

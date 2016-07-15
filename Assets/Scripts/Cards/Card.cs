@@ -24,8 +24,22 @@ public class Card : MonoBehaviour {
             Logger.LogError(this, "GetAttribute", "Invalid attribute: " + (int)att);
     }
     
-    public Card Max(Card a, Card b, CardAttributes att) {
-        return a.GetAttribute(att) > b.GetAttribute(att) ? a : b;
+    static public Card Max(Card a, Card b, CardAttributes att) {
+        Debug.Log("Comparing attributes " + a.GetAttribute(att) + " with " + b.GetAttribute(att));
+        switch(att) {
+            case (CardAttributes.At1):
+                return a.GetAttribute(att) > b.GetAttribute(att) ? a : b;
+            case (CardAttributes.At2):
+                return a.GetAttribute(att) > b.GetAttribute(att) ? a : b;
+            case (CardAttributes.At3):
+                return a.GetAttribute(att) > b.GetAttribute(att) ? a : b;
+            case (CardAttributes.At4):
+                return a.GetAttribute(att) > b.GetAttribute(att) ? a : b;
+            case (CardAttributes.At5):
+                return a.GetAttribute(att) > b.GetAttribute(att) ? a : b;
+            default:
+                return a;
+        }
     }
 
     void Start() {
