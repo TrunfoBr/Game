@@ -6,6 +6,7 @@ public class Card : MonoBehaviour {
     public Text cardNameText;
     public Text[] attributeText;
 
+    [SerializeField]
     private float[] attributes = new float[5];
 
     public float GetAttribute(CardAttributes att) {
@@ -25,8 +26,8 @@ public class Card : MonoBehaviour {
     }
     
     static public Card Max(Card a, Card b, CardAttributes att) {
-        Debug.Log("Comparing attributes " + a.GetAttribute(att) + " with " + b.GetAttribute(att));
-        switch(att) {
+        Debug.Log("[Card]Max:Comparing attributes " + a.GetAttribute(att) + " with " + b.GetAttribute(att));
+        switch (att) {
             case (CardAttributes.At1):
                 return a.GetAttribute(att) > b.GetAttribute(att) ? a : b;
             case (CardAttributes.At2):

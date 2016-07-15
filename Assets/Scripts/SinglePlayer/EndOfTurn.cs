@@ -5,12 +5,13 @@ public class EndOfTurn : MonoBehaviour {
     public SinglePlayer[] players;
 
     public static EndOfTurn Instance { get; private set; }
+    public int LastWinner { get; private set; }
 
     public void RequestAttributeComparison(int attribute) {
-        var winner = FindWinner(attribute);
-        UpdateWinner(winner);
+        FindWinner(attribute);
+        UpdateWinner();
         EndTurn();
-        Logger.Log(this, "RequestAttributeComparison", "The winner is: " + winner);
+        Logger.Log(this, "RequestAttributeComparison", "The winner is: " + LastWinner);
     }
 
     void Awake() {
@@ -20,21 +21,20 @@ public class EndOfTurn : MonoBehaviour {
             Logger.LogError(this, "Awake", "Instance not null");
     }
 
-    private int FindWinner(int attribute) {
-        int winner = 0;
-        Card winnerCard = players[winner].GetComponent<SinglePlayer>().hand.GetComponent<Card>();
+    private void FindWinner(int attribute) {
+        LastWinner = 0;
+        Card winnerCard = players[LastWinner].GetComponent<SinglePlayer>().hand.GetComponent<Card>();
         for (int i = 1; i < players.GetLength(0); ++i) {
             Card currentCard = players[i].GetComponent<SinglePlayer>().hand.GetComponent<Card>();
-            if (Card.Max(winnerCard, currentCard, (CardAttributes)i) == currentCard) {
-                winner = i;
+            if (Card.Max(winnerCard, currentCard, (CardAttributes)attribute) == currentCard) {
+                LastWinner = i;
                 winnerCard = currentCard;
             }
         }
-        return winner;
     }
 
-    private void UpdateWinner(int winner) {
-        var winnerScript = players[winner].GetComponent<SinglePlayer>();
+    private void UpdateWinner() {
+        var winnerScript = players[LastWinner].GetComponent<SinglePlayer>();
         // Send winner head card to bottom
         {
             var card = winnerScript.my_deck[0];
@@ -44,7 +44,7 @@ public class EndOfTurn : MonoBehaviour {
         }
         // Send losers head card to bottom
         for (int i = 0; i < players.GetLength(0); ++i) {
-            if (i != winner) {
+            if (i != LastWinner) {
                 var loserScript = players[i].GetComponent<SinglePlayer>();
                 var loserTopCard = loserScript.my_deck[0];
                 loserTopCard.SetActive(false);
