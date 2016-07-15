@@ -8,6 +8,7 @@ public class CardFactory : MonoBehaviour {
     public GameObject cardList;
 
     public bool isDone { get; private set; }
+    public float progress { get; private set; }
 
     void Awake() {
         isDone = false;
@@ -22,7 +23,10 @@ public class CardFactory : MonoBehaviour {
     }
 
     IEnumerator WaitForRequest(WWW www) {
-        yield return www;
+        while (!www.isDone) {
+            progress = www.progress;
+            yield return null;
+        }
 
         if (www.error == null) {
             Debug.Log("WWW OK!");
