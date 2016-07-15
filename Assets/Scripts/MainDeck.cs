@@ -6,18 +6,13 @@ using System.Collections.Generic;
 public class MainDeck : NetworkBehaviour {
 
     public static MainDeck Instance;
-    private int cardAmount = 0;
-    private bool deckReady = false;
+    public int cardAmount = 0;
+    public bool deckReady = false;
 
-    public override void OnStartServer() {
-        var cards = CardList.Instance;
-        for (int i = 0; i < cards.CardAmount; i++) {
-            cardAmount++;
-            var card = cards.GetCard(i);
-            card.transform.parent = transform;
-            NetworkServer.Spawn(card);
+    void Update() {
+        if (stillHasCards() && deckReady) {
+            
         }
-        deckReady = true;
     }
 
     public bool stillHasCards() {

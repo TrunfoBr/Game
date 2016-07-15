@@ -5,11 +5,14 @@ using System.Collections;
 public class Player : NetworkBehaviour {
     
     public static int numberOfPlayers = 0;
-
-    [SyncVar]
     public int playerId;
 
-    void Awake() {
+    public override void OnStartLocalPlayer() {
+        CmdStart();
+    }
+
+    [Command]
+    public void CmdStart() {
         playerId = numberOfPlayers++;
         gameObject.name = "Player" + playerId.ToString();
     }
@@ -18,9 +21,9 @@ public class Player : NetworkBehaviour {
         if (!isLocalPlayer)
             return;
 
-        var deck = MainDeck.Instance;
+        /*var deck = MainDeck.Instance;
         if (deck.stillHasCards()) {
             deck.GiveCardTo(gameObject);
-        }
+        }*/
     }
 }

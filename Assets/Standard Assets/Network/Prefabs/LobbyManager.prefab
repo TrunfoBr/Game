@@ -3228,6 +3228,7 @@ MonoBehaviour:
   m_OnlineScene: 
   m_SpawnPrefabs:
   - {fileID: 130712, guid: 93f8bffc59d6bc44d9f84678641386e1, type: 2}
+  - {fileID: 117566, guid: d8153064455f9434686158f39da7d674, type: 2}
   m_CustomConfig: 0
   m_MaxConnections: 4
   m_ConnectionConfig:
@@ -4457,8 +4458,8 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -960.00006, y: 105}
-  m_SizeDelta: {x: 1920, y: 105}
+  m_AnchoredPosition: {x: -303.19, y: 105}
+  m_SizeDelta: {x: 606.39, y: 105}
   m_Pivot: {x: 0, y: 1}
 --- !u!224 &22403944
 RectTransform:
@@ -4824,8 +4825,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1039.3477, y: -50}
-  m_SizeDelta: {x: 2078.6953, y: 100}
+  m_AnchoredPosition: {x: 261.6894, y: -50}
+  m_SizeDelta: {x: 523.3788, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22434328
 RectTransform:
